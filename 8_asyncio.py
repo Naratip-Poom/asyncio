@@ -7,7 +7,7 @@ def blocking_task():
     #report a message
     print(f'{time.ctime()} Task starting...')
     #block for a while
-    time.sleep(2)
+    time.sleep(1)
     #report a message
     print(f'{time.ctime()} Task done')
 
@@ -29,4 +29,8 @@ async def main():
 #run the asyncio program
 asyncio.run(main())
 
-
+# ANS
+# Wed Jul 19 13:32:37 2023 Main runnung the blocking task
+# Wed Jul 19 13:32:37 2023 Main doing other things
+# Wed Jul 19 13:32:37 2023 Task starting...
+# Wed Jul 19 13:32:38 2023 Task done
